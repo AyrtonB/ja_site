@@ -1,0 +1,144 @@
+// Variable Overrides 
+$theme-colors: (
+  "primary": rgb(236, 30, 30)
+);
+
+$body-bg: #ffffff;
+
+// Component overrides
+.jumbotron {
+    background-color: "#ffffff" !important;
+    border-top: 3px solid rgb(219, 219, 219);
+}
+
+.page-footer {
+    background-color: "#5cb85c" !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem; }
+    .nav-link:hover, .nav-link:focus {
+      text-decoration: none; }
+    .nav-link.disabled {
+      color: #ededed; }
+    
+
+// New components
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+
+
+.white_bkgd {
+    background-color: "#ffffff";
+}
+
+.energy_bkgd {
+    background-size: cover;
+    background-image: url("../img/energy_cover.png");
+}
+
+.testimonial_bkgd {
+    background-size: cover;
+    background-image: url("../img/water_grey.jpg") !important;
+}
+
+.rig_bkgd {
+    background-size: cover;
+    background-image: url("../img/rig_grey_cropped.jpg") !important;
+}
+
+.wind_bkgd {
+    background-size: cover;
+    background-image: url("../img/wind_grey_cropped.jpg") !important;
+}
+
+.white_txt {
+    color: #ffffff  !important;
+}
+
+.bold_txt {
+    font-weight: bold;
+}
+
+.red_txt {
+    color: rgb(236, 30, 30)  !important;
+}
+
+.red-bkg {
+    background-color: rgb(236, 30, 30) !important; }
+
+.grey_txt {
+    color: rgb(124, 124, 124)  !important;
+}
+
+.no_border{
+    border: none  !important;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.underline-hover:hover {
+    text-decoration: underline  !important;
+    background-color: rgb(236, 30, 30) !important;
+}
+
+.center-div {
+     margin: 0 auto;
+     width: 150px; 
+}
+
+.underline_wide{
+    border-bottom:3px solid rgb(236, 30, 30); 
+    width:150px; 
+    padding-bottom:5px;
+}
+
+.underline{
+    border-bottom:3px solid rgb(236, 30, 30); 
+    width:110px; 
+    padding-bottom:5px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.md-form.input-group label {
+    top: 0;
+    margin-bottom: 0; }
+  
+  .md-form.input-group .input-group-text {
+    background-color: #e0e0e0; }
+    .md-form.input-group .input-group-text.md-addon {
+      border: none;
+      background-color: transparent;
+      font-weight: 500; }
+  
+  .md-form.input-group .form-control {
+    margin: 0;
+    padding: 0.375rem 0.75rem; }
+
+
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,54 @@
+<!-- views/components/navbar.ejs -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <!-- Brand section of the navbar -->
+    <a class="navbar-brand" href="/home">JA Professional Services</a>
+
+    <!-- Link section of the navbar -->
+    <!-- This button appears on small views, the data target is set as the id of the navbar links -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span> <!-- The toggler icon shown here could be swapped out for anything else -->
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link white_txt underline-hover" href="/home">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link white_txt underline-hover" href="/home#AboutUs">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle white_txt underline-hover" href="#" id="navbarDropdown" data-toggle="dropdown">
+                    Sectors
+                </a>
+                <div class="dropdown-menu bg-primary">
+                    <a class="dropdown-item white_txt underline-hover" href="/sectors#oil_and_gas">Oil & Gas</a>
+                    <a class="dropdown-item white_txt underline-hover" href="/sectors#renewables">Renewables</a>
+                    <a class="dropdown-item white_txt underline-hover" href="/sectors#built_environment">Built Environment</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle white_txt underline-hover" href="#" id="navbarDropdown" data-toggle="dropdown">
+                    Services
+                </a>
+                <div class="dropdown-menu bg-primary">
+                    <a class="dropdown-item white_txt underline-hover" href="/services#project_management">Project Management</a>
+                    <a class="dropdown-item white_txt underline-hover" href="/services#technical_studies">Technical Studies</a>
+                    <a class="dropdown-item white_txt underline-hover" href="/services#o_and_m">Operation & Maintenance</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link white_txt underline-hover" href="#ContactUs">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>

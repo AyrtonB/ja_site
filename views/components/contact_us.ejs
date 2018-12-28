@@ -1,0 +1,105 @@
+<!-- views/components/contact_us.ejs -->
+
+<!-- Contact Us Section -->
+<div class="row mt-sm-4 mt-md-0">
+    <div class="col-sm-12 col-md-12 text-sm-center text-md-left">
+        <a name="ContactUs"></a> 
+        <h3 class="red_txt underline_wide text-center center-div">Contact Us</h3>
+        <br>
+        <p class="lead">Please get in touch to find out more about the areas we work in, and how we can deliver value to your business.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="/contact" method="POST" role="form">
+                    <fieldset>
+                            
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <br />
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+        
+                        <br>
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <br>
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                        <label for="message">Message</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <br>
+                        <!--Send Button-->
+                        <div class="text-center text-md-left">
+                            <button type="submit" class="btn btn-primary white_txt">Send</button>
+                        </div>
+                        <div class="status"></div>
+                        <!--Send Button-->                
+                    </fieldset>   
+                </form>
+    
+
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fa fa-map-marker fa-2x"></i>
+                        <p>20-22 Wenlock Road, London, England, N1 7GU</p>
+                    </li>
+    
+                    <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                        <p>+44 (0) 203 217 4491</p>
+                    </li>
+    
+                    <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                        <p>info@JAProfessionalServices.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+    
+        </div>
+    </div>
+</div>
