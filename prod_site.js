@@ -6,13 +6,13 @@ const { google } = require("googleapis");
 // Configuring email authentication
 const OAuth2 = google.auth.OAuth2;
 const oauth2Client = new OAuth2(
-  "689080175422-8mu26771p3jj2aeo13ojs50dn7djtsek.apps.googleusercontent.com", // ClientID
-  "yUyZ6pAWf78S6Ap4qm5mJnmf", // Client Secret
+  "", // ClientID
+  "", // Client Secret
   "https://developers.google.com/oauthplayground" // Redirect URL
 );
 
 oauth2Client.setCredentials({
-  refresh_token: "1/WoYRsbYB4yIlBDa3a-owwJ6TZysQTkThNXFjWpScHopYoIj9-2nLb9P0L1EOd7cK"
+  refresh_token: ""
 });
   
 const accessToken = oauth2Client.refreshAccessToken()
@@ -56,19 +56,19 @@ app.post('/contact', function (req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: 'JAP.energy.info@gmail.com',
-        pass: 'JAP_999!',
+        user: '',
+        pass: '',
         type: "OAuth2", 
-        clientId: "689080175422-8mu26771p3jj2aeo13ojs50dn7djtsek.apps.googleusercontent.com",
-        clientSecret: "yUyZ6pAWf78S6Ap4qm5mJnmf",
-        refreshToken: "1/WoYRsbYB4yIlBDa3a-owwJ6TZysQTkThNXFjWpScHopYoIj9-2nLb9P0L1EOd7cK",
+        clientId: "",
+        clientSecret: "",
+        refreshToken: "",
         accessToken: accessToken
       }
     });
-    // info@japrofessionalservices.com <- JAP Info
+    //
     mailOpts = {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-      to: 'info@JAProfessionalServices.com',
+      to: '',
       subject: 'Inquiries',
       text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     };
